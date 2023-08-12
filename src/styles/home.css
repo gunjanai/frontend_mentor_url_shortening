@@ -130,23 +130,34 @@
 
 .card{
     max-width: 30%;
+    max-height: 10rem;
     background-color: white;
     text-align: left;
     border-radius: 0.5rem;
     padding: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
 }
 
-.card__image{
+.card__image__container{
     position: relative;
-    width: 5rem;
-    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    top: -3rem;
     background-color: rgb(29, 20, 52);
-    height: 5rem;
-    /* padding: 1rem; */
     border-radius: 100%;
 }
 
+.card__image{
+    position: absolute;
+    width: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .card__heading{
+    margin-top: -1rem;
     font-size: 1rem;
     font-weight: bolder;
 }
@@ -154,4 +165,39 @@
 .card__subheading{
     color: gray;
     font-size: small;
+}
+
+.card2{
+    margin-top: 5rem;
+}
+
+.card3{
+    margin-top: 10rem;
+
+}
+
+.horizontal__line{
+    border: 3px solid red;
+}
+
+.boost__link__container{
+    width: 100%;
+    background-color: rgb(29, 20, 52);
+    background-image: url(../assets/images/bg-boost-desktop.svg);
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.boost__link__heading{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.link__button{
+    border-radius: 1rem;
 }

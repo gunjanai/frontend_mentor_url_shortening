@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import "../styles/home.css";
 import workingIllustration from "../assets/images/illustration-working.svg";
-import brandRecognitionIcon from '../assets/images/icon-brand-recognition.svg'
+import brandRecognitionIcon from "../assets/images/icon-brand-recognition.svg";
+import detailedRecordsIcon from "../assets/images/icon-detailed-records.svg";
+import fullyCustomizableIcon from "../assets/images/icon-fully-customizable.svg";
+import Footer from "./Footer";
 
 function Home() {
   const [fullLink, setFullLink] = useState("");
@@ -69,20 +72,53 @@ function Home() {
           </div>
           <div className="home__body__heading__subheading__container">
             <p className="home__body__heading">Advanced Statistics</p>
-              <p className="home__body__subheading">
-              Track how your links are performing across the web with our advanced statistics dashboard.
-              </p>
+            <p className="home__body__subheading">
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
           </div>
           <div className="home__body__card__container">
             <div className="card">
-              <img src={brandRecognitionIcon} className="card__image" />
+              <div className="card__image__container">
+                <img src={brandRecognitionIcon} className="card__image" />
+              </div>
               <p className="card__heading">Brand Recognition</p>
               <p className="card__subheading">
-              Track how your links are performing across the web with our advanced statistics dashboard.
+                Track how your links are performing across the web with our
+                advanced statistics dashboard.
+              </p>
+            </div>
+            <div className="card card2">
+              <div className="card__image__container">
+                <img src={detailedRecordsIcon} className="card__image" />
+              </div>
+              <p className="card__heading">Brand Recognition</p>
+              <p className="card__subheading">
+                Track how your links are performing across the web with our
+                advanced statistics dashboard.
+              </p>
+            </div>
+            <div className="card card3">
+              <div className="card__image__container">
+                <img src={fullyCustomizableIcon} className="card__image" />
+              </div>
+              <p className="card__heading">Brand Recognition</p>
+              <p className="card__subheading">
+                Track how your links are performing across the web with our
+                advanced statistics dashboard.
               </p>
             </div>
           </div>
+          <div className="boost__link__container">
+          <p className="boost__link__heading">Boost your links today!</p>
+            <button
+              className="shorten__button link__button"
+            >
+              Get Started
+            </button>
+          </div>
         </div>
+        <Footer />
       </div>
     </>
   );
