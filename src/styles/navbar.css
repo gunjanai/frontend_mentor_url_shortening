@@ -1,0 +1,42 @@
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.navbar__left__side__container{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__right__side__container{
+    margin-right: 1rem;
+}
+
+.navbar__item{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.login__button{
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+}
+
+.login__button:hover{
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+}
+
+.signUp__button{
+    margin-right: 3rem;
+}

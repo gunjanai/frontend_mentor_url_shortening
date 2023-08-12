@@ -1,0 +1,220 @@
+.home__heading__picture{
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home__heading__right__side{
+    max-width: 60%;
+}
+
+.home__heading__left__side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.get__started__button{
+    max-width: 50%;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.home__heading{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.subheading{
+    margin-top: -2rem;
+    color: gray;
+}
+
+.home__body__container{
+    background-color: rgb(238,241,246);
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.url__shortener__container{
+    width: 80%;
+    background-color: rgb(29, 20, 52);
+    background-image: url(../assets/images/bg-shorten-desktop.svg);
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+.url__shortener__input{
+    width: 60%;
+    height: 40%;
+}
+
+.shorten__button{
+    height: 45%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 2rem;
+    border-radius: 0.4rem;
+}
+
+.link__list__container{
+    width: 87%;
+    max-height: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-top: 1rem;
+    overflow-y: scroll;
+}
+
+.link__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.full__link{
+    width: 60%;
+    text-align: left;
+    overflow-x: auto;
+    font-size: small;
+}
+
+.short__link{
+    width: 20%;
+    text-align: right;
+    overflow-x: auto;
+    font-size: small;
+}
+
+.home__body__heading__subheading__container{
+    width: 40%;
+}
+
+.home__body__heading{
+    font-size:2rem;
+    font-weight: bolder;
+}
+
+.home__body__subheading{
+    margin-top: -1rem;
+    color: gray;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.home__body__card__container{
+    display: flex;
+    width: 80%;
+}
+
+.card{
+    max-width: 30%;
+    max-height: 10rem;
+    background-color: white;
+    text-align: left;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
+.card__image__container{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    top: -3rem;
+    background-color: rgb(29, 20, 52);
+    border-radius: 100%;
+}
+
+.card__image{
+    position: absolute;
+    width: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__heading{
+    margin-top: -1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.card__subheading{
+    color: gray;
+    font-size: small;
+}
+
+.card2{
+    margin-top: 5rem;
+}
+
+.card3{
+    margin-top: 10rem;
+
+}
+
+.horizontal__line{
+    border: 3px solid red;
+}
+
+.boost__link__container{
+    width: 100%;
+    background-color: rgb(29, 20, 52);
+    background-image: url(../assets/images/bg-boost-desktop.svg);
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.boost__link__heading{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.link__button{
+    border-radius: 1rem;
+}
+
+.selected__copy__button{
+    background-color: rgb(29, 20, 52);
+    width: 5rem;
+    font-size: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+.copy__button{
+    width: 5rem;
+    font-size: 0.6rem;
+    border-radius: 0.3rem;
+}
