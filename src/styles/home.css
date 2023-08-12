@@ -100,11 +100,15 @@
 .full__link{
     width: 60%;
     text-align: left;
+    overflow-x: auto;
+    font-size: small;
 }
 
 .short__link{
     width: 20%;
     text-align: right;
+    overflow-x: auto;
+    font-size: small;
 }
 
 .home__body__heading__subheading__container{
@@ -200,4 +204,17 @@
 
 .link__button{
     border-radius: 1rem;
+}
+
+.selected__copy__button{
+    background-color: rgb(29, 20, 52);
+    width: 5rem;
+    font-size: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+.copy__button{
+    width: 5rem;
+    font-size: 0.6rem;
+    border-radius: 0.3rem;
 }

@@ -6,24 +6,34 @@ import brandRecognitionIcon from "../assets/images/icon-brand-recognition.svg";
 import detailedRecordsIcon from "../assets/images/icon-detailed-records.svg";
 import fullyCustomizableIcon from "../assets/images/icon-fully-customizable.svg";
 import Footer from "./Footer";
+import axios from "axios";
 
 function Home() {
   const [fullLink, setFullLink] = useState("");
   const [links, setLinks] = useState([]);
+  const [selectedButton, setSelectedButton] = useState()
 
   const handleInputChange = (e) => {
     setFullLink(e.target.value);
   };
 
+  console.log(fullLink)
+
   const handleShortenButtonClick = () => {
-    setLinks([
+    axios(`https://api.shrtco.de/v2/shorten?url=${fullLink}`)
+    .then((res) => setLinks([
       ...links,
       {
         fullLink: fullLink,
-        shortLink: "abc",
+        shortLink: res.data.result.full_short_link,
       },
-    ]);
+    ])).catch(error => console.log(error))
   };
+
+  const handleCopyClick = (index) => {
+    setSelectedButton(index)
+    navigator.clipboard.writeText(links[index]?.shortLink)
+  }
 
   console.log(links);
 
@@ -60,12 +70,12 @@ function Home() {
             </button>
           </div>
           <div className="link__list__container">
-            {links.map((item) => {
+            {links.map((item, index) => {
               return (
-                <ul className="link__list">
+                <ul className="link__list" key={index}>
                   <span className="full__link">{item.fullLink}</span>
                   <span className="short__link">{item.shortLink}</span>
-                  <button>Copy</button>
+                  <button className={`${selectedButton === index ? "selected__copy__button" : "copy__button"}`} onClick={() => handleCopyClick(index)}>{selectedButton === index ? "Copied!" : "Copy"}</button>
                 </ul>
               );
             })}

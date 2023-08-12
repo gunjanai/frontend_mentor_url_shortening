@@ -1,0 +1,33 @@
+.footer__container{
+    min-height: 15rem;
+    background-color: black;
+    display: flex;
+    padding-top: 4rem;
+    /* align-items: center; */
+}
+
+.footer__item{
+    /* margin-left: 0.5rem; */
+    margin-right: 10%;
+    color: white;
+}
+
+.footer__logo{
+    width: 15%;
+}
+
+.item__heading{
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.item__column{
+    text-align: left;
+    font-size: small;
+}
+
+
+.social__media_icon{
+    margin-right: 1rem ;
+    margin-top: 1rem;
+}
